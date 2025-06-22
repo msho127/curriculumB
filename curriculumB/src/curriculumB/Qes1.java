@@ -111,7 +111,7 @@ public class Qes1 {
 		double price;
 		//変数に値を代入
 		price = 99.99;
-		//変数priceの値を変数intPriceに代入し、強制型変換する。
+		//変数priceの値をint型に強制型変換し、変数intPriceに代入する。
 		int intPrice = (int) price;
 		//コンソール画面に"整数価格:99"と表示する。
 		System.out.println("整数価格:" + intPrice);
@@ -123,8 +123,9 @@ public class Qes1 {
 		----------------------------------*/
 		//型に変数を設定し、値を代入する。
 		String numStr = "123";
-		//
+		//変数numStrの文字列を整数に変換し、変数intNumStrに代入する。
 		int intNumStr = Integer.parseInt(numStr);
+		//コンソール画面にintNumStrに10足した値を表示する。
 		System.out.println(intNumStr + 10);
 		System.out.println();
 		
@@ -132,37 +133,50 @@ public class Qes1 {
 		 [概要] 整数から文字列への変換処理
 		 [詳細] int型をString型に変換して、文字列と結合して出力する。
 		----------------------------------*/
+		//型に変数を設定し、値を代入する。
 		int num = 50;
+		//int型numの値をString型に変換し、strNumに代入する
 		String strNum = String.valueOf(num);
+		//コンソール画面に"得点:50点"と表示する。
 		System.out.println("得点:" + strNum + "点");
 		System.out.println();
-		
+
 		/*----------------------------------
 		 [概要] 比較演算結果の出力処理
 		 [詳細] aとbを比較し、結果をboolean型で出力する。
 		----------------------------------*/
+		//型に変数を設定し、値を代入する。
 		int a = 10;
 		int b = 20;
+		//aがbより小さいかを比較し、その結果をresultに代入
 		boolean result = a < b;
+		//比較結果をコンソール画面に表示する。
 		System.out.println(result);
 		System.out.println();
-		
+
 		/*----------------------------------
 		 [概要] 条件演算子による文字列選択処理
 		 [詳細] xの値が10以上かどうかで"ok"か"ng"を選び出力する。
 		----------------------------------*/
+		//型に変数を設定し、値を代入する。
 		int x = 15;
+		//条件演算子を使って、xが10以上なら"ok"、そうでなければ"ng"をresult1に代入
 		String result1 = (x >= 10) ? "ok" : "ng";
+		//結果をコンソール画面に表示する。
 		System.out.println(result1);
 		System.out.println();
-		
+
 		/*----------------------------------
 		 [概要] 文字列置換処理
 		 [詳細] "java"という文字列を"python"に置き換えて出力する。
 		----------------------------------*/
+		//型に変数を設定し、文字を代入する。
 		String text = "私はjavaが好きです。java楽しい!";
+		//text内の"java"という文字列を"python"に置き換えてreplacedTextに代入
 		String replacedText = text.replace("java", "python");
+		//置き換えた結果をコンソール画面に表示する。
 		System.out.println(replacedText);
 		System.out.println();
+
 	}
 }
