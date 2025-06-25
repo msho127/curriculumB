@@ -11,11 +11,11 @@ public class Qes2 {
 		// 型に変数を設定し、値を代入。
 		int score = 75;
 		// もし変数の値が60より大きい場合、ブロック内を適用
-		if ( score > 60 ) {
+		if ( score >= 60 ) {
 			// コンソール画面に"合格です！"と表示する。
 			System.out.println( "合格です！" );
-		// もし変数の値が60未満だった場合、ブロック内を適用
-		}else if( score < 60 ){
+		// 上記以外の場合
+		}else{
 			// コンソール画面に"不合格です。"と表示する。
 			System.out.println( "不合格です。" );
 		}
@@ -158,7 +158,7 @@ public class Qes2 {
 		// 上記以外の場合
 		}else {
 			// コンソール画面に"入力された文字は有効です"と表示する。
-			System.out.println( "入力された文字は有効です" );
+			System.out.println( text );
 		}
 		System.out.println();
 		
