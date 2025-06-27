@@ -15,9 +15,9 @@ public class Qes1 {
 		long longNum = 0L;
 		float floatNum = 0.0f;
 		double doubleNum = 0.0;
-		char letter = 'A';
-		String letters = "";
-		boolean isBoolean = true;
+		char letter = '\u0000';
+		String letters = "null";
+		boolean isBoolean = false;
 
 	
 

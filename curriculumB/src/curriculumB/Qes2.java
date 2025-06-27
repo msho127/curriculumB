@@ -1,5 +1,7 @@
 package curriculumB;
 
+import java.util.Scanner;
+
 public class Qes2 {
 
 	public static void main(String[] args) {
@@ -149,17 +151,23 @@ public class Qes2 {
 		 [概要] 文字列の空チェック
 		 [詳細] textが空文字かどうかを判定し、無効か有効かを表示する。
 		----------------------------------*/
-		// 型に変数を設定し、値を代入。
-		String text = "";
+		// Scannerの作成
+		Scanner scanner = new Scanner(System.in);
+		// コンソール画面に入力を促すメッセージを表示
+		System.out.print("文字を入力してください：");
+		// 型に変数を設定し、scannerに入力された文字を変数に代入。
+		String text = scanner.nextLine();
 		// もし変数の値が空文字だった場合、ブロック内を適用
 		if( text.isEmpty()) {
 			// コンソール画面に"入力が無効です"と表示する。
 			System.out.println( "入力が無効です" );
 		// 上記以外の場合
 		}else {
-			// コンソール画面に"入力された文字は有効です"と表示する。
+			// コンソール画面に変数textを表示する。
 			System.out.println( text );
 		}
+		// Scannerを閉じる
+		scanner.close();
 		System.out.println();
 		
 		/*----------------------------------
