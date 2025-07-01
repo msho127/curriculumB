@@ -155,7 +155,7 @@ public class Qes2 {
 		Scanner scanner = new Scanner(System.in);
 		// コンソール画面に入力を促すメッセージを表示
 		System.out.print("文字を入力してください：");
-		// 型に変数を設定し、scannerに入力された文字を変数に代入。
+		// 型に変数を設定し、ユーザーが入力した文字を変数に代入。
 		String text = scanner.nextLine();
 		// もし変数の値が空文字だった場合、ブロック内を適用
 		if( text.isEmpty()) {
