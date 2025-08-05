@@ -182,8 +182,6 @@ public class Qes3 {
         System.out.print("ここに家電を入力：");
         // 入力された家電名を「、」で区切り、配列に分割して格納
         String[] products = scanner.next().split("、");
-        // Scannerを閉じる
-        scanner.close();
 
         // ランダム値を生成するためのRandomオブジェクトを作成
         Random rand = new Random();
@@ -228,5 +226,8 @@ public class Qes3 {
                     break;
             }
         }
+
+        // Scannerを閉じる
+        scanner.close();
 	}
 }
