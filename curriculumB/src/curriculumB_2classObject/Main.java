@@ -1,6 +1,6 @@
 package curriculumB_2classObject;
 
-public class main {
+public class Main {
 	public static void main(String[] args) {
 		/*----------------------------------
 		 [概要] 従業員情報の表示処理

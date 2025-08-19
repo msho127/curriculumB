@@ -1,6 +1,6 @@
 package curriculumB_3encapsulation;
 
-public class main {
+public class Main {
 	public static void main(String[] args) {
 		/*----------------------------------
 		 [概要] 従業員情報をセッターで設定し出力する処理

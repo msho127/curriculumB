@@ -1,6 +1,6 @@
 package curriculumB_1basicConcept;
 
-public class main {
+public class Main {
 	public static void main(String[] args) {
 		/*----------------------------------
 		 [概要] 従業員は働いているを出力する処理
